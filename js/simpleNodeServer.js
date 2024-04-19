@@ -6,14 +6,12 @@ const cors = require('cors');
 const app = express();
 const server = http.createServer(app);
 
-// Enable CORS for all requests
 app.use(cors());
 
-// Create Socket.IO instance and attach it to the HTTP server
 const io = socketIO(server, {
   cors: {
-    origin: "*", // Allow requests from any origin
-    methods: ["GET", "POST"] // Allow only GET and POST requests
+    origin: "*", 
+    methods: ["GET", "POST"] 
   }
 });
 
