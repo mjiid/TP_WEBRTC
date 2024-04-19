@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "express": "^4.19.2",
+    "node-static": "^0.7.11",
+    "socket.io": "^4.7.5",
     "ws": "^8.16.0"
   }
 }
